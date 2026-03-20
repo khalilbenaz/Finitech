@@ -1,10 +1,9 @@
-<Project Sdk="Microsoft.NET.Sdk">
+<Project>
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <!-- Allow NuGet to resolve transitive dependency versions automatically -->
+    <NoWarn>$(NoWarn);NU1605</NoWarn>
   </PropertyGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Domain\Finitech.Modules.Wallet.Domain.csproj" />
-  </ItemGroup>
 </Project>
